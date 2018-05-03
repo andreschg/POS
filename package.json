@@ -1,9 +1,16 @@
 {
   "name": "POS_Electron",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "license": "MIT",
+  "scripts": {
+    "electron": "electron .",
+    "wepback": "webpack --watch" 
+  },
   "dependencies": {
     "webpack": "^4.6.0"
+  },
+  "devDependencies": {
+    "electron": "^2.0.0"
   }
 }
