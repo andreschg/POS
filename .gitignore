@@ -1,1 +1,7 @@
 node_modules
+
+# Dist folder
+public/dist
+
+# Error logs
+yarn-error.log
