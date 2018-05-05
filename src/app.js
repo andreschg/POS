@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Dashboard from './components/Dashboard';
+import AppRouter from './routes/AppRouter';
 
 const App = () => (
   <MuiThemeProvider>
-    <Dashboard />
+    <AppRouter />
   </MuiThemeProvider>
 );
 
