@@ -1,0 +1,24 @@
+#sidebar-wrapper {
+  width: 220px;
+  height: 100%;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  transition: linear 0.2s;
+
+  &.active {
+    right: -220px;
+  }
+
+  .sidebar-item {
+    display: inline-block;
+    width: 100%
+  }
+
+  .sidebar-nav {
+    border-radius: 0%;
+    margin-bottom: 0px;
+  }
+
+  
+}
