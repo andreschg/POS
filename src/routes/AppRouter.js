@@ -6,6 +6,7 @@ import Dashboard from '../components/Dashboard';
 import Order from '../components/Order';
 import Navigation from '../components/Navigation';
 import Sidebar from '../components/Sidebar';
+import Options from '../components/Options';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -15,7 +16,7 @@ const AppRouter = () => (
         <Sidebar />
         <Grid md={12} >
           <Switch>
-            <Route path="/" component={Dashboard} exact={true} />
+            <Route path="/" component={Options} exact={true} />
             <Route path="/order" component={Order} />
           </Switch>
         </Grid>
