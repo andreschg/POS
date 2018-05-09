@@ -2,14 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppRouter from './routes/AppRouter';
-import './styles/styles.scss';
+import { Provider } from 'react-redux';
 import 'bootstrap';
+import store from './store/configureStore';
+import './styles/styles.scss';
 import './scripts/sidebar';
 
 const App = () => (
-  <MuiThemeProvider>
-    <AppRouter />
-  </MuiThemeProvider>
+  <Provider store={store} > 
+    <MuiThemeProvider>
+      <AppRouter />
+    </MuiThemeProvider>
+  </Provider>
 );
 
 ReactDOM.render(
