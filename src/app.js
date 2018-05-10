@@ -16,6 +16,8 @@ const App = () => (
   </Provider>
 );
 
+console.log(store.getState());
+
 ReactDOM.render(
   <App />,
   document.getElementById('app')
