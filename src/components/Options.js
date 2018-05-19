@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Row, Col } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
+ 
 const Options = () => {
   const options = {
     "Mesas": "Mesas",
@@ -9,13 +10,15 @@ const Options = () => {
     "Usuarios": "Usuarios",
     "Roles": "Roles",
     "About": "About",
-    "Menu": "Menu"
+    "/menu": "Menu"
   }; 
   return (
   <Row>
     { Object.keys(options).map((key) => (
       <Col key={key} md={4}>
-        <Button className="wide-btn margin-botton-md full-width" bsStyle="primary" bsSize="large">{options[key]}</Button>
+        <Link
+          className="wide-btn margin-botton-md full-width btn btn-lg btn-primary"
+          to={key}>{options[key]}</Link>
       </Col>
     )) }
   </Row>);
